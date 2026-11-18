@@ -40,6 +40,7 @@
 @media(max-width:640px){.bottomnav{grid-template-columns:repeat(6,1fr)}.bottomnav button{font-size:8px}.bottomnav button .navicon{font-size:17px}.guide-step{gap:9px;padding:18px 0}.guide-index{flex-basis:30px;width:30px;height:30px}.guide-intro{padding:17px}.guide-main h3{font-size:19px}}
 @media print{body.print-guide .page{display:none!important}body.print-guide #page-guide{display:block!important}body.print-guide .topbar,body.print-guide .hero,body.print-guide .bottomnav,body.print-guide .footnote,body.print-guide .guide-actions,body.print-guide .tabs,body.print-guide .guide-goto{display:none!important}body.print-guide #page-guide .panel{border:0!important;box-shadow:none!important}body.print-guide #page-guide .guide-intro{break-after:avoid}body.print-guide .app{padding:0!important}body.print-guide .guide-step{padding:13px 0}body.print-guide .guide-tip{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
 
+.ticket-file-list{display:grid;gap:8px;margin-top:10px}.ticket-file-row{display:flex;flex-wrap:wrap;gap:7px;align-items:center;padding:9px;background:rgba(255,255,255,.83);border:1px solid var(--line);border-radius:12px}.ticket-file-name{font-size:12px;overflow-wrap:anywhere;flex:1;min-width:120px}.ticket-file-row .btn{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -200,5 +201,6 @@ function init(){initNav();activeDay=dayIndexToday();mapDay=activeDay;renderRoute
 window.addEventListener('load',init);
 
 </script>
+<script src="./multi-tickets.js" defer></script>
 <script src="./guide.js" defer></script>
 </body></html>
